@@ -1,0 +1,21 @@
+.banner-edit-preview{
+    max-width: 300px; 
+}
+
+.banner-container{
+    position: relative;
+}
+
+.banner-container img{
+    border-radius: 2px;
+}
+
+.banner-confirm-btn, .banner-next-btn{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.banner-next-btn{
+    right: 163px;
+}

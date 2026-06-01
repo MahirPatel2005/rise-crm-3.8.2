@@ -1,0 +1,22 @@
+body {
+    background: #c0e6cd;
+}
+
+.card{
+    border: none;
+}
+
+.card-header{
+    background: #212529;
+    color: #fff;
+}
+
+ul li {
+    line-height: 30px;
+    list-style-type: none;
+    text-indent: -20px
+}
+
+ul li:before {
+    content: "→  ";
+}

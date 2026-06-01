@@ -1,0 +1,127 @@
+/*recruitment-style*/
+
+.recruitment-widget {
+    background-color: rgba(238, 241, 249, 0.5);
+    color: rgba(0, 0, 0, .6);
+    align-items: center;
+    border-radius: 0.25rem;
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: center;
+    padding: 0.5rem;
+    flex-direction: column;
+    width: 130px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.circular-preview{
+    max-width: 1080px;
+    min-width: 400px;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.recruitment-dropzone{
+    min-height: 150px;
+    border: 1px dashed #4466f2;
+    background: #fff;
+    padding: 20px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.recruitment-dropzone .dropzone-message{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.recruitment-upload-icon{
+    height: 40px;
+    width: 40px;
+    color: #4466F2;
+}
+
+#recruitment_circular_form_container .app-alert{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.card-block{
+    padding: 2rem 1.25rem;
+}
+h5.circular-card-title{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .5px;
+}
+.circular-company-title{
+    padding-bottom: 40px;
+}
+.circular-container{
+    padding: 30px 15px;
+    width: 1140px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative
+}
+.circular-container .card-block:hover{
+    background-color: #238DFD;
+    transition: .2s linear;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.custom-avatar{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+.custom-avatar span{
+    font-size: 16px;
+    font-weight: 600;
+    margin: auto;
+}
+
+.custom-avatar-lg{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(238, 241, 249, .5);
+    border-radius: 5px;
+}
+.custom-avatar-lg .text-profile-image{
+    font-weight: 600;
+    align-items: center;
+    height: 100%;
+    display: inline-flex;
+    font-size: 35px;
+}
+
+.rating-section{
+    background-color: #EEF1F9;
+    border-radius: 5px;
+}
+
+.icon-20{
+    width: 20px;
+    height: 20px;
+}
+
+.form-group{
+    margin-bottom: 17px;
+}
+.form-group .row label,
+.form-group .row .form-control
+{
+    font-size: 15px;
+}
+
+.form-group .row label span{
+    font-size: 13px;
+}
+
+#job-preview-container .note-editor.note-frame {
+    border: none;
+}

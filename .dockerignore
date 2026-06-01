@@ -1,0 +1,8 @@
+writable/cache/*
+writable/session/*
+writable/temp/*
+.DS_Store
+.git
+.gitignore
+Dockerfile
+.dockerignore
