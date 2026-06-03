@@ -33,10 +33,14 @@ COPY . /var/www/html
 # Ensure the web server has full access to the project
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 775 /var/www/html/writable \
-    && chmod -R 775 /var/www/html/files
+    && chmod -R 775 /var/www/html/files \
+    && chmod +x /var/www/html/docker-entrypoint.sh
 
 # Expose port 80 for Render / web traffic
 EXPOSE 80
+
+# Set our custom entrypoint script
+ENTRYPOINT ["/var/www/html/docker-entrypoint.sh"]
 
 # Start Apache in the foreground
 CMD ["apache2-foreground"]

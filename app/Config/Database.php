@@ -82,6 +82,23 @@ class Database extends Config
 	{
 		parent::__construct();
 
+		// Override default database settings with environment variables if they are set on Render
+		if (getenv('DB_HOSTNAME')) {
+			$this->default['hostname'] = getenv('DB_HOSTNAME');
+		}
+		if (getenv('DB_USERNAME')) {
+			$this->default['username'] = getenv('DB_USERNAME');
+		}
+		if (getenv('DB_PASSWORD')) {
+			$this->default['password'] = getenv('DB_PASSWORD');
+		}
+		if (getenv('DB_DATABASE')) {
+			$this->default['database'] = getenv('DB_DATABASE');
+		}
+		if (getenv('DB_PORT')) {
+			$this->default['port'] = (int)getenv('DB_PORT');
+		}
+
 		// Ensure that we always set the database group to 'tests' if
 		// we are currently running an automated test suite, so that
 		// we don't overwrite live data on accident.
