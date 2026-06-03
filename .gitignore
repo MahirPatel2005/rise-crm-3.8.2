@@ -2,3 +2,4 @@ writable/cache/*
 writable/session/*
 writable/temp/*
 .DS_Store
+.env

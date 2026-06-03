@@ -32,9 +32,9 @@ class Database extends Config
 	 */
 	public $default = [
 		'DSN'      => '',
-		'hostname' => '127.0.0.1',
+		'hostname' => 'localhost',
 		'username' => 'root',
-		'password' => 'M@hir2005',
+		'password' => '',
 		'database' => 'rise_crm',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => 'rise_',
@@ -97,6 +97,9 @@ class Database extends Config
 		}
 		if (getenv('DB_PORT')) {
 			$this->default['port'] = (int)getenv('DB_PORT');
+		}
+		if (getenv('DB_ENCRYPT')) {
+			$this->default['encrypt'] = (getenv('DB_ENCRYPT') === 'true' || getenv('DB_ENCRYPT') === '1') ? ['ssl_verify' => false] : false;
 		}
 
 		// Ensure that we always set the database group to 'tests' if
