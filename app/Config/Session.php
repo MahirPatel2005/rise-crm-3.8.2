@@ -124,4 +124,13 @@ class Session extends BaseConfig
      * seconds.
      */
     public int $lockMaxRetries = 300;
+
+    public function __construct()
+    {
+        parent::__construct();
+
+        if (getenv('SESSION_DRIVER')) {
+            $this->driver = getenv('SESSION_DRIVER');
+        }
+    }
 }
